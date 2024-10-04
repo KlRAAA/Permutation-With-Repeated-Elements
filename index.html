@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wardrobe Outfit Generator</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Wardrobe Outfit Generator</h1>
+
+      <div class="input-section">
+        <h2>Input your wardrobe items:</h2>
+        <label for="tops">Tops (comma separated):</label>
+        <input
+          type="text"
+          id="tops"
+          placeholder="e.g., White shirt, Black t-shirt, Blue sweater"
+        />
+
+        <label for="bottoms">Bottoms (comma separated):</label>
+        <input
+          type="text"
+          id="bottoms"
+          placeholder="e.g., Jeans, Black trousers"
+        />
+
+        <label for="shoes">Shoes (comma separated):</label>
+        <input
+          type="text"
+          id="shoes"
+          placeholder="e.g., Sneakers, Formal shoes"
+        />
+
+        <label for="accessories">Accessories (comma separated):</label>
+        <input type="text" id="accessories" placeholder="e.g., Watch, Scarf" />
+
+        <!-- Dropdown for filtering -->
+        <label for="filter">Filter by occasion:</label>
+        <select id="filter">
+          <option value="all">All</option>
+          <option value="casual">Casual</option>
+          <option value="formal">Formal</option>
+        </select>
+
+        <button id="generateButton" onclick="generateOutfits()">
+          Generate Outfits
+        </button>
+        <button
+          id="regenerateButton"
+          onclick="generateOutfits()"
+          style="display: none"
+        >
+          Regenerate Outfits
+        </button>
+      </div>
+
+      <div class="output-section">
+        <h2>Generated Outfits:</h2>
+        <ul id="outfitList"></ul>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

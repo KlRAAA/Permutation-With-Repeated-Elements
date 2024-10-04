@@ -1,0 +1,152 @@
+/* General reset and styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Poppins", sans-serif;
+    background-color: #fff5e4;
+    color: #333;
+    padding: 20px;
+  }
+  
+  /* Centered container with shadow and rounded edges */
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #ffe3e1;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Stylish header */
+  h1 {
+    text-align: center;
+    font-size: 36px;
+    color: #ff9494;
+    margin-bottom: 30px;
+    font-weight: 700;
+  }
+  
+  /* Subtitle styling */
+  h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+    font-weight: 600;
+  }
+  
+  /* Input section layout */
+  .input-section {
+    margin-bottom: 30px;
+  }
+  
+  /* Input field styling */
+  label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #555;
+  }
+  
+  input,
+  select {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 20px;
+    transition: border 0.3s ease;
+  }
+  
+  input:focus,
+  select:focus {
+    border: 2px solid #ff6b6b;
+    outline: none;
+  }
+  
+  /* Button Styling */
+  button {
+    width: 100%;
+    background-color: #ffc7c7;
+    color: black;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #ff4757;
+    color: white;
+  }
+  
+  /* Output Section */
+  .output-section {
+    margin-top: 40px;
+  }
+  
+  /* List of outfits */
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  ul li {
+    background-color: #f9f9f9;
+    margin-bottom: 15px;
+    padding: 20px;
+    border-left: 6px solid #ff6b6b;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    font-size: 16px;
+    transition: transform 0.2s ease;
+  }
+  
+  ul li:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* Additional aesthetic elements */
+  .container::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    background: radial-gradient(circle, #ff6b6b, transparent);
+    top: -50px;
+    left: -50px;
+    z-index: -1;
+  }
+  
+  .container::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: radial-gradient(circle, #ff6b6b, transparent);
+    bottom: -50px;
+    right: -50px;
+    z-index: -1;
+  }
+  
+  #regenerateButton {
+    background-color: #ff6b6b; /* Different color to stand out */
+    margin-top: 20px; /* Spacing between the buttons */
+  }
+  
+  #regenerateButton:hover {
+    background-color: #ff4757;
+  }
+  
