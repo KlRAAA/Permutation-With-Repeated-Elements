@@ -23,43 +23,6 @@ Generation: The system generates all possible outfit combinations (with item reu
 Filtering: The user can filter outfits by occasion (casual or formal).
 Output: A list of generated outfits is displayed.
 
-
-Here’s a README.md file for your Wardrobe Outfit Generator project that covers everything from the system's purpose to how it works and how to run it. It includes explanations of the formula used, logic behind the code, and instructions for both CLI and GUI interaction.
-
-Wardrobe Outfit Generator
-Table of Contents
-Introduction
-System Overview
-Features
-Logic of the Code
-Formula Explanation
-Installation
-Usage Instructions
-Running in GUI Format
-Customization Options
-Technologies Used
-Future Improvements
-Introduction
-The Wardrobe Outfit Generator is a tool that helps users generate all possible outfit combinations from their wardrobe. It simplifies daily outfit planning by permuting clothing items such as tops, bottoms, shoes, and accessories into different combinations. The tool also supports repeated use of certain items (like shoes and accessories), and allows filtering based on preferences (e.g., formal vs. casual).
-
-The system can be easily integrated into a fashion or lifestyle website and is perfect for anyone who wants help in styling and maximizing their wardrobe options.
-
-## System Overview
-The Wardrobe Outfit Generator works by taking user inputs (tops, bottoms, shoes, and accessories) and generating all possible permutations of outfits. Users can also apply filters to display only casual or formal outfits.
-
-Key steps involved:
-
-Input: Users enter wardrobe items as comma-separated values.
-Generation: The system generates all possible outfit combinations (with item reuse).
-Filtering: The user can filter outfits by occasion (casual or formal).
-Output: A list of generated outfits is displayed.
-Features
-User-Friendly Interface: Allows users to input their wardrobe items directly into a form.
-Permutations with Repetition: Generates all possible combinations with repeated items like shoes or accessories.
-Filtering Options: Users can filter outfits by occasion (casual, formal).
-Regenerate Option: Users can generate and regenerate outfits as many times as they want with one click.
-Stylistic Design: Styled to fit into a fashion or lifestyle website.
-
 ## Logic of the Code
 The core logic revolves around generating all combinations of the wardrobe items using a permutation with repetition approach.
 
