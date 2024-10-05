@@ -74,7 +74,7 @@ This means every possible combination of these elements is considered, including
 
    ```bash
    git clone https://github.com/KlRAAA/wardrobe-outfit-generator.git
-2. Open the index.html file in your web browser.
+2. Open the index.html file in your web browser
 Alternatively, if using a local server (like Live Server in VSCode):
 
 1. Open the project folder in VSCode.
@@ -84,43 +84,28 @@ No additional installations or dependencies are required for running this projec
 ## Usage Instructions
 ### Running in GUI Format
 
-1. **Open the Application**:
+1. **Open the Application:**
    - Open the `index.html` file in any modern web browser.
 
-2. **Input Password Length**:
-   - Use the slider or input field to specify the desired password length.
-
-3. **Select Character Types**:
-   - Check or uncheck boxes to include/exclude character sets (uppercase, lowercase, digits, symbols).
-
-4. **Generate Password**:
-   - Click the **Generate Password** button to create a password based on your preferences.
-
-5. **Copy Password**:
-   - Once the password is generated, click the **Copy to Clipboard** button to copy the password for easy use.
-
-### Running via Local Server (e.g., Live Server in VSCode)
-1. **Open Project in VSCode**:
-   - Open the folder containing the project files in Visual Studio Code.
-
-2. **Open with Live Server**:
-   - Right-click on the `index.html` file and select **Open with Live Server**.
-
-3. **View in Browser**:
-   - The application will open automatically in your browser with all functionality ready to use.
-
+2.**Input Wardrobe Items:**
+  - Enter the tops, bottoms, shoes, and accessories you have in your wardrobe, separated by commas.
+3. **Select Filter (Optional):**
+  - Use the dropdown filter to specify whether you want to see casual or formal outfit combinations. Select "All" to view every 
+    possible outfit.
+4. **Generate Outfits:**
+  - Click the Generate Outfits button to see all possible combinations.
+5. **Regenerate Outfits:**
+    - After the first generation, a Regenerate button will appear. You can click this button to create a new set of outfit combinations.
+6. **View Generated Outfits:**
+  - A list of generated outfits will appear below the input section.
+  - 
 ### Customization Options
 
-You can easily modify the system to meet your specific needs:
+You can easily customize the system to fit your specific needs:
 
-1. **Set Minimum/Maximum Password Length**:
-   - You can adjust the slider to enforce specific length requirements, helping to improve security.
-
-2. **Add More Character Sets**:
-   - Extend the system to support additional character types, like emojis or special symbols.
-
-3. **Modify Password Strength Criteria**:
-   - Update the system to provide feedback on password strength, such as weak, medium, or strong.
+1. **Add More Items:** Extend the form to include other wardrobe categories (e.g., jackets, hats).
+2. **Modify Filters:** Change or add new filtering criteria (e.g., seasons, weather).
+3. Enhance Output:** Style the output to show images of items instead of text.
 
 ### Technologies Used
 - **HTML5**: For structuring the application's layout.
@@ -129,17 +114,9 @@ You can easily modify the system to meet your specific needs:
 
 ### Future Improvements
 
-1. **Password Strength Indicator**:
-   - Add a feature that evaluates and displays the strength of the generated password in real time.
-
-2. **Password History**:
-   - Implement a system to save and display previously generated passwords for future use.
-
-3. **Visual Feedback**:
-   - Enhance the user interface by providing visual feedback for each character type (e.g., highlighting the strength of the generated password).
-   
-4. **Entropy Calculation**:
-   - Introduce a feature that calculates the entropy of the password to give users a better understanding of its strength.
+1. **Outfit Images:** Incorporate the ability to upload images for wardrobe items to generate visual combinations.
+2. **Drag-and-Drop Interface:** Add a drag-and-drop feature where users can manually create outfits.
+3. **Weather and Location-Based Suggestions:** Include real-time weather conditions to suggest appropriate outfits.
 
 
 
