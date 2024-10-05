@@ -61,7 +61,7 @@ Clone the repository or download the project files:
 
 bash
 Copy code
-git clone https://github.com/yourusername/wardrobe-outfit-generator.git
+git clone https://github.com/KlRAAA/wardrobe-outfit-generator.git
 Open the index.html file in your web browser.
 
 Alternatively, if using a local server (like Live Server in VSCode):
