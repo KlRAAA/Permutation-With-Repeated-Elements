@@ -2,19 +2,19 @@ function generateOutfits() {
   const tops = document
     .getElementById("tops")
     .value.split(",")
-    .map((item) => item.trim());
+    .map((item) => item.trim().toLowerCase());  
   const bottoms = document
     .getElementById("bottoms")
     .value.split(",")
-    .map((item) => item.trim());
+    .map((item) => item.trim().toLowerCase());  
   const shoes = document
     .getElementById("shoes")
     .value.split(",")
-    .map((item) => item.trim());
+    .map((item) => item.trim().toLowerCase());  
   const accessories = document
     .getElementById("accessories")
     .value.split(",")
-    .map((item) => item.trim());
+    .map((item) => item.trim().toLowerCase());  
   const filter = document.getElementById("filter").value;
 
   let outfitList = document.getElementById("outfitList");
@@ -22,172 +22,56 @@ function generateOutfits() {
 
   const casualItems = {
     tops: [
-      "Black t-shirt",
-      "t-shirt",
-      "Blue sweater",
-      "Graphic t-shirt",
-      "Hoodie",
-      "Casual button-up shirt",
-      "Tank top",
-      "Flannel shirt",
-      "Short-sleeve button-up",
-      "Long-sleeve t-shirt",
-      "Crewneck sweatshirt",
-      "Belted shirt dress",
-      "Polo shirt",
-      "Denim jacket",
-      "Sweater",
-      "Sando",
-      "White t-shirt",
-      "Henley shirt",
-      "V-neck t-shirt",
-      "Baseball tee",
-      "Bomber jacket",
-      "Varsity jacket",
-      "Denim vest",
-      "Chambray shirt",
-      "Raglan shirt",
-      "Oversized hoodie",
-      "Graphic sweatshirt",
-      "Windbreaker",
-      "Crop top",
-      "Striped t-shirt",
-      "Corduroy jacket",
-      "Knit cardigan",
+      "black t-shirt", "t-shirt", "blue sweater", "graphic t-shirt", "hoodie", 
+      "casual button-up shirt", "tank top", "flannel shirt", "short-sleeve button-up", 
+      "long-sleeve t-shirt", "crewneck sweatshirt", "belted shirt dress", "polo shirt", 
+      "denim jacket", "sweater", "sando", "white t-shirt", "henley shirt", "v-neck t-shirt", 
+      "baseball tee", "bomber jacket", "varsity jacket", "denim vest", "chambray shirt", 
+      "raglan shirt", "oversized hoodie", "graphic sweatshirt", "windbreaker", "crop top", 
+      "striped t-shirt", "corduroy jacket", "knit cardigan"
     ],
     bottoms: [
-      "Jeans",
-      "Shorts",
-      "Chinos",
-      "Joggers",
-      "Cargo pants",
-      "Sweatpants",
-      "Skorts",
-      "Leggings",
-      "Trousers",
-      "Culottes",
-      "Capri pants",
-      "Distressed jeans",
-      "Cargo shorts",
-      "Sweat shorts",
-      "Track pants",
-      "Overalls",
-      "Denim shorts",
-      "Bermuda shorts",
-      "Corduroy pants",
-      "Ripped skinny jeans",
-      "Loose-fit jeans",
-      "Athletic pants",
+      "jeans", "shorts", "chinos", "joggers", "cargo pants", "sweatpants", "skorts", 
+      "leggings", "trousers", "culottes", "capri pants", "distressed jeans", "cargo shorts", 
+      "sweat shorts", "track pants", "overalls", "denim shorts", "bermuda shorts", 
+      "corduroy pants", "ripped skinny jeans", "loose-fit jeans", "athletic pants"
     ],
     shoes: [
-      "Sneakers",
-      "Flip flops",
-      "Loafers",
-      "Canvas shoes",
-      "Ankle boots",
-      "Slides",
-      "Chelsea boots",
-      "High-top sneakers",
-      "Moccasins",
-      "Platform shoes",
-      "Crocs",
-      "Nikes",
-      "Pandas",
-      "Samba",
-      "Skate shoes",
-      "Slip-on sneakers",
-      "Running shoes",
-      "Hiking boots",
-      "Desert boots",
-      "Low-top sneakers",
-      "Espadrilles",
-      "Boat shoes",
-      "Clogs",
-      "Leather sandals",
-      "Tennis shoes",
-      "Sliders",
-    ],
+      "sneakers", "flip flops", "loafers", "canvas shoes", "ankle boots", "slides", 
+      "chelsea boots", "high-top sneakers", "moccasins", "platform shoes", "crocs", 
+      "nikes", "pandas", "samba", "skate shoes", "slip-on sneakers", "running shoes", 
+      "hiking boots", "desert boots", "low-top sneakers", "espadrilles", "boat shoes", 
+      "clogs", "leather sandals", "tennis shoes", "sliders"
+    ]
   };
 
   const formalItems = {
     tops: [
-      "White shirt",
-      "Light blue dress shirt",
-      "Black dress shirt",
-      "Polo shirt",
-      "Dress blazer",
-      "Pinstriped shirt",
-      "Silk blouse",
-      "Turtleneck sweater",
-      "Crisp white turtleneck",
-      "Sleeveless blouse",
-      "Silk camisole",
-      "Velvet blazer",
-      "Lace blouse",
-      "Sequin top",
-      "Sheer blouse",
-      "Peplum top",
-      "Ruffle shirt",
-      "Satin wrap top",
-      "Embellished blazer",
-      "Cropped blazer",
-      "Fitted cardigan",
-      "Chiffon blouse",
-      "Embroidered dress shirt",
-      "Velvet dress shirt",
-      "Lace turtleneck",
+      "white shirt", "light blue dress shirt", "black dress shirt", "polo shirt", 
+      "dress blazer", "pinstriped shirt", "silk blouse", "turtleneck sweater", 
+      "crisp white turtleneck", "sleeveless blouse", "silk camisole", "velvet blazer", 
+      "lace blouse", "sequin top", "sheer blouse", "peplum top", "ruffle shirt", 
+      "satin wrap top", "embellished blazer", "cropped blazer", "fitted cardigan", 
+      "chiffon blouse", "embroidered dress shirt", "velvet dress shirt", "lace turtleneck"
     ],
     bottoms: [
-      "Black trousers",
-      "Navy trousers",
-      "Gray slacks",
-      "Khaki dress pants",
-      "Formal shorts",
-      "Pleated skirt",
-      "A-line skirt",
-      "Pencil skirt",
-      "Tailored trousers",
-      "Dressy culottes",
-      "Pinstripe trousers",
-      "Cropped dress pants",
-      "Wide-leg trousers",
-      "Tapered dress pants",
-      "High-waist dress pants",
-      "Palazzo pants",
-      "Satin skirt",
-      "Tiered skirt",
-      "Maxi skirt",
-      "Velvet pencil skirt",
-      "Wrap skirt",
+      "black trousers", "navy trousers", "gray slacks", "khaki dress pants", 
+      "formal shorts", "pleated skirt", "a-line skirt", "pencil skirt", 
+      "tailored trousers", "dressy culottes", "pinstripe trousers", "cropped dress pants", 
+      "wide-leg trousers", "tapered dress pants", "high-waist dress pants", 
+      "palazzo pants", "satin skirt", "tiered skirt", "maxi skirt", "velvet pencil skirt", 
+      "wrap skirt"
     ],
     shoes: [
-      "Formal shoes",
-      "Oxfords",
-      "Brogues",
-      "Dress boots",
-      "Loafers",
-      "Derby shoes",
-      "Pointed-toe heels",
-      "Wedge heels",
-      "Dress sandals",
-      "Cap-toe shoes",
-      "Black shoes",
-      "Flat shoes",
-      "Slingback heels",
-      "Peep-toe heels",
-      "Court shoes",
-      "Kitten heels",
-      "Platform heels",
-      "Ankle strap heels",
-      "Patent leather shoes",
-      "Stilettos",
-      "Satin pumps",
-      "Embellished sandals",
-      "Ballet flats",
-      "Metallic loafers",
-      "Chunky heels",
-    ],
+      "formal shoes", "oxfords", "brogues", "dress boots", "loafers", "derby shoes", 
+      "pointed-toe heels", "wedge heels", "dress sandals", "cap-toe shoes", "black shoes", 
+      "flat shoes", "slingback heels", "peep-toe heels", "court shoes", "kitten heels", 
+      "platform heels", "ankle strap heels", "patent leather shoes", "stilettos", 
+      "satin pumps", "embellished sandals", "ballet flats", "metallic loafers", 
+      "chunky heels"
+    ]
   };
+
   for (let top of tops) {
     for (let bottom of bottoms) {
       for (let shoe of shoes) {
