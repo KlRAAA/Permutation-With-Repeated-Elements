@@ -12,7 +12,6 @@
 - [Customization Options](#customization-options)
 - [Technologies Used](#technologies-used)
 - [Future Improvements](#future-improvements)
-- [Appendix](#appendix)
 
 ## Introduction
 The **Wardrobe Outfit Generator** is a tool that helps users generate all possible outfit combinations from their wardrobe. It simplifies daily outfit planning by permuting clothing items such as tops, bottoms, shoes, and accessories into different combinations. The tool also supports repeated use of certain items (like shoes and accessories), and allows filtering based on preferences (e.g., formal vs. casual).
